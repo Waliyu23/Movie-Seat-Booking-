@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book movie tickets online and select your preferred seats">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Seat Booking | Reserve Your Cinema Experience</title>
+</head>
+<body>
+    <main class="booking-app">
+        <header class="app-header">
+            <h1>Movie Seat Booking</h1>
+        </header>
+
+        <section class="movie-selection">
+            <label for="movie" class="movie-label">Select a Movie:</label>
+            <select id="movie" class="movie-dropdown" aria-label="Choose a movie">
+                <option value="10">Avengers: Endgame ($10)</option>
+                <option value="12">Attack on Titan ($12)</option>
+                <option value="20">Sakamoto Days ($20)</option>
+                <option value="9">Squid Game ($9)</option>
+            </select>
+        </section>
+
+        <section class="seat-legend" aria-label="Seat status legend">
+            <ul class="legend-list">
+                <li class="legend-item">
+                    <div class="seat sample" aria-hidden="true"></div>
+                    <small>Available</small>
+                </li>
+                <li class="legend-item">
+                    <div class="seat sample selected" aria-hidden="true"></div>
+                    <small>Selected</small>
+                </li>
+                <li class="legend-item">
+                    <div class="seat sample occupied" aria-hidden="true"></div>
+                    <small>Occupied</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="theater" aria-label="Theater seating arrangement">
+            <div class="screen" aria-hidden="true">Screen</div>
+            
+            <div class="seating-area">
+                <div class="row" role="row" aria-label="Row 1">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 1"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 2"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 3"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 4"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 5"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 6"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 7"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 1 Seat 8"></div>
+                </div>
+                <div class="row" role="row" aria-label="Row 2">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 1"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 2 Seat 2 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 2 Seat 3 (Occupied)"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 4"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 5"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 6"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 7"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 2 Seat 8"></div>
+                </div>
+                <div class="row" role="row" aria-label="Row 3">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 1"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 3 Seat 2 (Occupied)"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 3"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 4"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 5"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 6"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 3 Seat 7"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 3 Seat 8 (Occupied)"></div>
+                </div>
+                <div class="row" role="row" aria-label="Row 4">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 1"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 2"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 3"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 4"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 5"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 4 Seat 6 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 4 Seat 7 (Occupied)"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 4 Seat 8"></div>
+                </div>
+                <div class="row" role="row" aria-label="Row 5">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 1"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 2"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 3"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 4"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 5"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 6"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 7"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 5 Seat 8"></div>
+                </div>
+                <div class="row" role="row" aria-label="Row 6">
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 6 Seat 1"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 6 Seat 2"></div>
+                    <div class="seat" role="gridcell" tabindex="0" aria-label="Row 6 Seat 3"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 6 Seat 4 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 6 Seat 5 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 6 Seat 6 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 6 Seat 7 (Occupied)"></div>
+                    <div class="seat occupied" role="gridcell" tabindex="0" aria-label="Row 6 Seat 8 (Occupied)"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="booking-summary">
+            <p class="summary-text">
+                You have selected <span id="count" aria-live="polite">0</span> 
+                seats for a total price of <span id="total" aria-live="polite">$0</span>
+            </p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
